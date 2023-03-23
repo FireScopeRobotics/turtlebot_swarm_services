@@ -1,0 +1,6 @@
+[submodule "mlx90640"]
+	path = mlx90640
+	url = https://github.com/WaterlooSwarmBot/mlx90640-library.git
+[submodule "BMP390"]
+	path = BMP390
+	url = https://github.com/WaterlooSwarmBot/Adafruit_CircuitPython_BMP3XX.git
