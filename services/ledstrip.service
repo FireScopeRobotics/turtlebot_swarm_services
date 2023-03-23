@@ -1,0 +1,11 @@
+[Unit]
+
+Description=start ledstrips
+After=turtlebot4.service
+
+[Service]
+User=root
+ExecStart=/home/ubuntu/turtlebot_swarm_services/services/ledstrip.sh
+
+[Install]
+WantedBy=multi-user.target
