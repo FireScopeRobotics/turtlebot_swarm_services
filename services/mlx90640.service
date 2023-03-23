@@ -1,0 +1,11 @@
+[Unit]
+
+Description=start thermal camera
+After=turtlebot4.service
+
+[Service]
+User=root
+ExecStart=/home/ubuntu/turtlebot_swarm_services/services/start_mlx.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+
+Description=start BMP390
+After=turtlebot4.service
+
+[Service]
+User=root
+ExecStart=/home/ubuntu/turtlebot_swarm_services/services/start_bmp390.sh
+
+[Install]
+WantedBy=multi-user.target
