@@ -2,9 +2,14 @@
 
 This repo contains the necessary modules to bring up the add-ons to the TurtleBot
 
+After cloning the repo initialise the submodules
+```text
+git submodule update --init
+
+```
 ## MLX90640 Thermal Camera
 
-The submodule is a fork of the MLX90640 driver made available by Pimoroni.
+The submodule is a fork of the MLX90640 driver made available by Pimoroni, the sensor interfaces through I2C
 
 On the TurtleBot4's, a few additional dependencies are needed to build this module:
 
@@ -47,16 +52,17 @@ There's other cool examples available that wasn't used for this project, but you
 
 ## BMP390 Barometric Pressure Sensor 
 
-The submodule is a fork of the BMP390 driver made available by Adafruit.
+The submodule is a fork of the BMP390 driver made available by Adafruit, the sensor interfaces through SPI (or I2C)
 
-It can be installed and used as a python pip package, but its much simpler directly use `BMP390/adafruit_bmp3xx.py`
+It can be installed and used as a python pip package, but its much simpler directly use `BMP390/adafruit_bmp3xx.py`.
 
 On the TurtleBot4's, a few additional dependencies are needed to build this module:
 
-TODO:
+Install the adafruit-blinka package along with python3 GPIO packages for the Raspberry Pi
 
 ```text
-sudo apt-get install TODO
+sudo pip3 install adafruit-blinka
+sudo apt-get install python3-dev python3-rpi.gpio
 ```
 
 The `sensor_pub.py` script publishes pressure and temperature data from the sensor to `/sensor_topic` as a Float64MultiArray
