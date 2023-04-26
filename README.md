@@ -21,7 +21,7 @@ sudo apt-get install libgstreamer1.0-0 gstreamer1.0-dev gstreamer1.0-tools gstre
 sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good
 ```
 
-To get the best out of the sensor modify `/boot/firmware/usercfg.txt` to change the I2C baudrate to 400 kHz:
+To get the best out of the sensor modify `/boot/firmware/usercfg.txt`  (or `/boot/firmware/config.txt`) to change the I2C baudrate to 400 kHz:
 
 ```text
 dtparam=i2c1=on,i2c1_baudrate=400000
