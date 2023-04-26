@@ -5,7 +5,6 @@ This repo contains the necessary modules to bring up the add-ons to the TurtleBo
 After cloning the repo initialise the submodules
 ```text
 git submodule update --init
-
 ```
 ## MLX90640 Thermal Camera
 
